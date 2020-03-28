@@ -3,7 +3,7 @@ Docker image to execute reposync and createrepo to create yum repository.
 
 # Usage
 
-## Download CentOS 7 and EPEL repository
+## Download CentOS 8 and EPEL repository
 
 ```
 # docker run --rm -d -it -v /path-to-your-repo-dir:/repo --name reposync tmatsuo/reposync

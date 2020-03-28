@@ -1,6 +1,6 @@
-From centos:7
+From centos:8
 
-RUN yum install -y yum-utils createrepo epel-release
+RUN dnf install -y yum-utils epel-release
 RUN mkdir -p /repo/conf/
 RUN mkdir -p /repo/repo/
 COPY docker-entrypoint.sh /

@@ -44,15 +44,4 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-echo "### Creating repositories ###"
-
-for i in `ls /repo/repo`; do
-    createrepo $CREATEREPO_OPTIONS /repo/repo/$i
-done
-
-if [ $? -ne 0 ]; then
-    echo "ERROR: createrepo"
-    exit 1
-fi
-
 exit 0
